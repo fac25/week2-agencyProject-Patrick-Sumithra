@@ -4,13 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Reset default stylings to reduce inconsistencies. https://meyerweb.com/eric/tools/css/reset/ -->
+    <link rel="stylesheet" href="./reset.css" />
+
+    <!-- Custom CSS  -->
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- Google Font Import - Burlow -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Home</title>
   </head>
   <body>
-    <section class="aboutUs">
+    <div class="container">
+      <section class="about">
+        <h2 class="modal__title">About us</h2>
+        <div class="about__info__wrapper">
+          <div class="about__info__card">
+            <img src="./images//patrick.jpg" alt="Patrick photo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nemo doloribus, fugiat perferendis vero soluta at aspernatur, natus ea labore nesciunt eum quaerat officiis harum similique! Tempore ipsum temporibus dolorem!</p>
+            <div class="modal__header">
+              <h2 class="modal__title">Patrick</h2>
+              <p class="modal__subtitle">xxxxxxxxxxxxxxxx</p>
+            </div>
+          </div>
+          <div class="about__info__card">
+            <img src="./images/sumithra.jpg" alt="Sumithra photo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nemo doloribus, fugiat perferendis vero soluta at aspernatur, natus ea labore nesciunt eum quaerat officiis harum similique! Tempore ipsum temporibus dolorem!</p>
+            <div class="modal__header">
+              <h2 class="modal__title">Sumithra</h2>
+              <p class="modal__subtitle">xxxxxxxxxxxxx</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button class="button">contact</button>
+      <div class="modal">
+        <div class="modal__content">
+          <div class="modal__header">
+            <h2 class="modal__title">Contact Us</h2>
+            <p class="modal__subtitle">
+              Feel free to contact us if you need any assistance or have any
+              questions.
+            </p>
+          </div>
+          <form class="form">
+            <div class="form__item">
+              <label class="form__label" for="name">name</label>
+              <input class="form__input" id="name" type="text" required />
+            </div>
 
-    </section>
-    <script type="module" src="./main.js"></script>
+            <div class="form__item">
+              <label class="form__label" for="email">email</label>
+              <input class="form__input" id="email" type="email" required />
+            </div>
+
+            <div class="form__item">
+              <label class="form__label" for="message">message</label>
+              <textarea
+                class="form__input form__textarea"
+                id="message"
+                required
+              ></textarea>
+            </div>
+
+            <button class="form__submit" type="submit">send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>
