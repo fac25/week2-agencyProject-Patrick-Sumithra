@@ -1,6 +1,8 @@
 :root {
   /* Colour variables */
   --picton-blue: #33ccff;
+  --taupe-gray: #847a8d;
+  --anti-flash-white: #f0f4f5;
 }
 
 html {
@@ -21,7 +23,7 @@ body {
   height: 80vh;
 }
 
-.contact__button {
+.button {
   background-color: white;
   border-radius: 20rem;
   border: none;
@@ -34,14 +36,85 @@ body {
   width: fit-content;
 }
 
-.contact__button:hover {
+.button:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
 
-.form {
+/* Popup/Modal */
+
+.modal {
+  align-items: center;
   background-color: white;
-  width: clamp(10rem, 80vw, 40rem);
+  border-radius: 2rem;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 45rem;
+  width: clamp(10rem, 80vw, 35rem);
+}
+
+.modal__content {
+  max-width: 80%;
+}
+
+.modal__overlay {
+  background-color: black;
+  opacity: 0.2;
+}
+
+.modal__header {
+  margin-top: 5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.modal__title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 1rem;
+}
+
+.modal__subtitle {
+  color: var(--taupe-gray);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.form__item {
+  background-color: var(--anti-flash-white);
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem 0;
+  padding: 0.5rem 1rem;
+}
+
+.form__item--active .form__label {
+  font-size: 1.4rem;
+  transform: none;
+}
+
+.form__label {
+  color: var(--taupe-gray);
+  cursor: text;
+  letter-spacing: 0.08rem;
+  text-transform: capitalize;
+  transform: translateY(70%);
+}
+
+.form__input {
+  background-color: transparent;
+  border: none;
+  color: var(--taupe-gray);
+  font-size: 1.8rem;
+  font-weight: 500;
+  height: 100%;
+  outline: 0;
 }
 
 .form__textarea {
