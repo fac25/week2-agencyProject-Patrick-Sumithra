@@ -1,0 +1,49 @@
+:root {
+  /* Colour variables */
+  --picton-blue: #33ccff;
+}
+
+html {
+  /* 
+  Change font-size to simplify the use of rem unit. https://www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/ 
+  1rem = 10px
+  */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.6rem;
+}
+
+.hero {
+  background-color: var(--picton-blue);
+  height: 80vh;
+}
+
+.contact__button {
+  background-color: white;
+  border-radius: 20rem;
+  border: none;
+  color: black;
+  font-weight: 900;
+  letter-spacing: 0.08rem;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.contact__button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.form {
+  background-color: white;
+  width: clamp(10rem, 80vw, 40rem);
+}
+
+.form__textarea {
+  resize: vertical;
+}

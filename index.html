@@ -4,13 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Reset default stylings to reduce inconsistencies. https://meyerweb.com/eric/tools/css/reset/ -->
+    <link rel="stylesheet" href="./reset.css" />
+
+    <!-- Custom CSS  -->
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- Google Font Import - Burlow -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Home</title>
   </head>
   <body>
-    <section class="aboutUs">
-
-    </section>
-    <script type="module" src="./main.js"></script>
+    <div class="hero">
+      <button class="contact__button">contact</button>
+      <form class="form">
+        <div class="form__item">
+          <label class="form__label" for="name">name</label>
+          <input class="form__input" id="name" type="text" />
+        </div>
+        <div class="form__item">
+          <label class="form__label" for="email">email</label>
+          <input class="form__input" id="email" type="email" />
+        </div>
+        <div class="form__item">
+          <label class="form__label" for="message">message</label>
+          <textarea class="form__input form__textarea" id="message"></textarea>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>
