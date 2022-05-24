@@ -1,3 +1,4 @@
+
 /*=======================================================================================*/
 /*                                              global                                   */
 /*=======================================================================================*/
@@ -36,20 +37,20 @@ body {
 /*                              About section                                            */
 /*=======================================================================================*/
 
-.about{
+.about {
   text-align: center;
 }
-.about__info__wrapper{
+.about__info__wrapper {
   display: flex;
   gap: 1rem;
 }
 
-.about__info__card{
+.about__info__card {
   flex:1;
   padding: 10px;
 }
 
-.about__info__card > *{
+.about__info__card > * {
   margin-bottom: 2rem;
 }
 
@@ -67,10 +68,11 @@ body {
 /*                                   Contact Form                                        */
 /*=======================================================================================*/
 
-/*.hero {
+.hero {
   background-color: var(--picton-blue);
   height: 80vh;
-}*/
+}
+
 
 .button {
   background-color: white;
