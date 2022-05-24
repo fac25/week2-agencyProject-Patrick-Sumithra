@@ -1,1 +1,1 @@
-import "./Contact.js";
+import "./Contact/index.js";
