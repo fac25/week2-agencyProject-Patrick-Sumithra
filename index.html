@@ -21,39 +21,38 @@
     <title>Home</title>
   </head>
   <body>
-    <div class="hero">
-      <button class="button">contact</button>
-      <div class="modal">
-        <div class="modal__content">
-          <div class="modal__header">
-            <h2 class="modal__title">Contact Us</h2>
-            <p class="modal__subtitle">
-              Feel free to contact us if you need any assistance or have any
-              questions.
-            </p>
-          </div>
-          <form class="form">
-            <div class="form__item form__item--active">
-              <label class="form__label" for="name">name</label>
-              <input class="form__input" id="name" type="text" />
-            </div>
-
-            <div class="form__item">
-              <label class="form__label" for="email">email</label>
-              <input class="form__input" id="email" type="email" />
-            </div>
-
-            <div class="form__item">
-              <label class="form__label" for="message">message</label>
-              <textarea
-                class="form__input form__textarea"
-                id="message"
-              ></textarea>
-            </div>
-
-            <button class="form__submit" type="submit">submit</button>
-          </form>
+    <button class="button">contact</button>
+    <div class="modal">
+      <div class="modal__content">
+        <div class="modal__header">
+          <h2 class="modal__title">Contact Us</h2>
+          <p class="modal__subtitle">
+            Feel free to contact us if you need any assistance or have any
+            questions.
+          </p>
         </div>
+        <form class="form">
+          <div class="form__item">
+            <label class="form__label" for="name">name</label>
+            <input class="form__input" id="name" type="text" required />
+          </div>
+
+          <div class="form__item">
+            <label class="form__label" for="email">email</label>
+            <input class="form__input" id="email" type="email" required />
+          </div>
+
+          <div class="form__item">
+            <label class="form__label" for="message">message</label>
+            <textarea
+              class="form__input form__textarea"
+              id="message"
+              required
+            ></textarea>
+          </div>
+
+          <button class="form__submit" type="submit">send</button>
+        </form>
       </div>
     </div>
     <script type="module" src="./scripts/main.js"></script>
