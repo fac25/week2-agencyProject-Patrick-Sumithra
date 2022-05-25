@@ -1,4 +1,3 @@
-
 /*=======================================================================================*/
 /*                                              global                                   */
 /*=======================================================================================*/
@@ -46,7 +45,7 @@ body {
 }
 
 .about__info__card {
-  flex:1;
+  flex: 1;
   padding: 10px;
 }
 
@@ -54,13 +53,13 @@ body {
   margin-bottom: 2rem;
 }
 
-.about__info__card >img {
+.about__info__card > img {
   /*
   For responsive image, the max-width property is set to 100%, the image will scale down 
   if it has to, but never scale up to be larger than its original size:
   */
   border-radius: 50%;
-  height:auto;
+  height: auto;
   max-width: 100%;
 }
 
@@ -72,7 +71,6 @@ body {
   background-color: var(--picton-blue);
   height: 80vh;
 }
-
 
 .button {
   background-color: white;
@@ -109,12 +107,12 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: 0.2s ease-in-out;
-  width: clamp(10rem, 80vw, 40rem);
 }
 
 .modal--active {
   left: 50%;
   top: 50%;
+  width: clamp(10rem, 80vw, 40rem);
 }
 
 .modal__content {
@@ -155,6 +153,7 @@ body {
   flex-direction: column;
   margin: 1.2rem 0;
   padding: 0.5rem 1rem;
+  min-height: 4rem;
 }
 
 .form__item--active .form__label {
@@ -192,9 +191,10 @@ body {
   font-weight: 900;
   letter-spacing: 0.08rem;
   margin: 1rem auto;
-  padding: 1.3rem 4rem;
+  padding: 1.5rem 0;
+  text-align: center;
   text-transform: uppercase;
-  width: fit-content;
+  width: clamp(5rem, 100%, 15rem);
 }
 
 .form__submit:hover {
