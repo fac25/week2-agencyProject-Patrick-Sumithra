@@ -1,8 +1,3 @@
-
-/*=======================================================================================*/
-/*                                              global                                   */
-/*=======================================================================================*/
-
 :root {
   /* Colour variables */
   --picton-blue: #33ccff;
@@ -23,56 +18,10 @@ body {
   font-size: 1.6rem;
 }
 
-.container {
-  /* 
-  This will set the main page width 65% of the viewport and align 
-  the content to the center.
-  */
-  width: 65%;
-  margin: auto;
-  padding-top: 60px;
-}
-
-/*=======================================================================================*/
-/*                              About section                                            */
-/*=======================================================================================*/
-
-.about {
-  text-align: center;
-}
-.about__info__wrapper {
-  display: flex;
-  gap: 1rem;
-}
-
-.about__info__card {
-  flex:1;
-  padding: 10px;
-}
-
-.about__info__card > * {
-  margin-bottom: 2rem;
-}
-
-.about__info__card >img {
-  /*
-  For responsive image, the max-width property is set to 100%, the image will scale down 
-  if it has to, but never scale up to be larger than its original size:
-  */
-  border-radius: 50%;
-  height:auto;
-  max-width: 100%;
-}
-
-/*=======================================================================================*/
-/*                                   Contact Form                                        */
-/*=======================================================================================*/
-
 .hero {
   background-color: var(--picton-blue);
   height: 80vh;
 }
-
 
 .button {
   background-color: white;
