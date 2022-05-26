@@ -1,8 +1,3 @@
-
-/*=======================================================================================*/
-/*                                              global                                   */
-/*=======================================================================================*/
-
 :root {
   /* Colour variables */
   --picton-blue: #33ccff;
@@ -31,6 +26,28 @@ body {
   width: 65%;
   margin: auto;
   padding-top: 60px;
+}
+
+.title--small {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 1rem;
+}
+
+.title--medium {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 1rem;
+}
+
+.subtitle--small {
+  color: var(--taupe-gray);
+}
+
+.title__wrapper {
+  margin-top: 3rem;
+  text-align: center;
+  width: 100%;
 }
 
 /*=======================================================================================*/
@@ -67,12 +84,10 @@ body {
 /*=======================================================================================*/
 /*                                   Contact Form                                        */
 /*=======================================================================================*/
-
 .hero {
   background-color: var(--picton-blue);
   height: 80vh;
 }
-
 
 .button {
   background-color: white;
@@ -124,22 +139,6 @@ body {
 .modal__overlay {
   background-color: black;
   opacity: 0.2;
-}
-
-.modal__header {
-  margin-top: 3rem;
-  text-align: center;
-  width: 100%;
-}
-
-.modal__title {
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin: 1rem;
-}
-
-.modal__subtitle {
-  color: var(--taupe-gray);
 }
 
 .form {
