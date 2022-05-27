@@ -3,6 +3,8 @@
   --picton-blue: #33ccff;
   --taupe-gray: #847a8d;
   --anti-flash-white: #f0f4f5;
+  --dark-saturated-cyan: #25564b;
+  --dark-gray-blue: #5a636c;
 }
 
 html {
@@ -16,6 +18,14 @@ html {
 body {
   font-family: "Barlow", sans-serif;
   font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fraunces", sans-serif;
 }
 
 .container {
@@ -40,6 +50,12 @@ body {
   margin: 1rem;
 }
 
+.title--large {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+
 .subtitle--small {
   color: var(--taupe-gray);
 }
@@ -48,6 +64,78 @@ body {
   margin-top: 3rem;
   text-align: center;
   width: 100%;
+}
+
+/*=======================================================================================*/
+/*                                      Header                                           */
+/*=======================================================================================*/
+
+.header{
+  align-items: center;
+  background-color: var(--picton-blue);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  min-height: 75px;  
+  padding: 10px;  
+  width: 100%; 
+}
+
+/* Navigation Bar*/
+.header__nav{
+  margin-left: 20px;
+}
+
+.header__nav a{
+  color:  white;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 8px 20px;
+}
+
+.header__nav a:hover{
+  background-color: white;
+  border-radius: 15px;
+  color: #4d4d4d;
+  cursor: pointer;
+  opacity: .5;
+  transition: .9s;
+}
+
+/* Hide the link that should open and close the header__nav on small screens */
+.header__nav .header__bar__icon{
+  display: none;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 600px) 
+{
+  .header__nav a {
+    display: none;
+  }    
+
+  .header__nav a.header__bar__icon {
+      display: block;
+      float: right;      
+  }
+
+  /* The "responsive" class is added to the header__nav in JavaScript when the user clicks on the header__bar__icon. This class makes the header__nav look good on small screens (display the links vertically instead of horizontally) */
+  .header__nav.responsive {
+    position: relative;
+  }
+
+  .header__nav.responsive a.header__bar__icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+
+  .header__nav.responsive a {
+    display: block;  
+    float: none;
+    text-align: left;
+  }
 }
 
 /*=======================================================================================*/
@@ -200,3 +288,5 @@ body {
   cursor: pointer;
   opacity: 0.8;
 }
+
+

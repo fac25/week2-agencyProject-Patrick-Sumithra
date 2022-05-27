@@ -11,6 +11,10 @@
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="./style.css" />
 
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        
+
     <!-- Google Font Import - Burlow -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +26,20 @@
   </head>
   <body>
     <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1 class="title--large">sunnyside</h1>
+        <!--Nav Menu-->
+        <nav class="header__nav"  id="navbar">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+            <a href="javascript:void(0);" class="header__bar__icon">
+              <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+      </header>
       <section class="about">
         <h2 class="title--medium">About us</h2>
         <div class="about__info__wrapper">
@@ -47,7 +65,7 @@
       <div class="modal">
         <div class="modal__content">
           <div class="title__wrapper">
-            <h2 class="h2-like">Contact Us</h2>
+            <h2 class="title--medium">Contact Us</h2>
             <p class="subtitle--small">
               Feel free to contact us if you need any assistance or have any
               questions.
