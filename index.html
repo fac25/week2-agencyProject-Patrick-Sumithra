@@ -11,6 +11,10 @@
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="./style.css" />
 
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        
+
     <!-- Google Font Import - Burlow -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,33 +26,37 @@
   </head>
   <body>
     <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1 class="title--large">sunnyside</h1>
+        <!--Nav Menu-->
+        <nav class="header__nav"  id="navbar">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+            <a href="javascript:void(0);" class="header__bar__icon">
+              <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+      </header>
       <section class="about">
-        <h2 class="modal__title">About us</h2>
+        <h2 class="title--medium">About us</h2>
         <div class="about__info__wrapper">
           <div class="about__info__card">
-            <img src="./images//patrick.jpg" alt="Patrick photo" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              nemo doloribus, fugiat perferendis vero soluta at aspernatur,
-              natus ea labore nesciunt eum quaerat officiis harum similique!
-              Tempore ipsum temporibus dolorem!
-            </p>
-            <div class="modal__header">
-              <h2 class="modal__title">Patrick</h2>
-              <p class="modal__subtitle">xxxxxxxxxxxxxxxx</p>
+            <img src="./images//patrick.jpg" alt="Patrick photo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nemo doloribus, fugiat perferendis vero soluta at aspernatur, natus ea labore nesciunt eum quaerat officiis harum similique! Tempore ipsum temporibus dolorem!</p>
+            <div class="title__wrapper">
+              <h2 class="title--small">Patrick</h2>
+              <p class="subtitle--small">xxxxxxxxxxxxxxxx</p>
             </div>
           </div>
           <div class="about__info__card">
-            <img src="./images/sumithra.jpg" alt="Sumithra photo" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              nemo doloribus, fugiat perferendis vero soluta at aspernatur,
-              natus ea labore nesciunt eum quaerat officiis harum similique!
-              Tempore ipsum temporibus dolorem!
-            </p>
-            <div class="modal__header">
-              <h2 class="modal__title">Sumithra</h2>
-              <p class="modal__subtitle">xxxxxxxxxxxxx</p>
+            <img src="./images/sumithra.jpg" alt="Sumithra photo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nemo doloribus, fugiat perferendis vero soluta at aspernatur, natus ea labore nesciunt eum quaerat officiis harum similique! Tempore ipsum temporibus dolorem!</p>
+            <div class="title__wrapper">
+              <h2 class="title--small">Sumithra</h2>
+              <p class="subtitle--small">xxxxxxxxxxxxx</p>
             </div>
           </div>
         </div>
@@ -56,36 +64,30 @@
       <button class="button">contact</button>
       <div class="modal">
         <div class="modal__content">
-          <div class="modal__header">
-            <h2 class="modal__title">Contact Us</h2>
-            <p class="modal__subtitle">
+          <div class="title__wrapper">
+            <h2 class="title--medium">Contact Us</h2>
+            <p class="subtitle--small">
               Feel free to contact us if you need any assistance or have any
               questions.
             </p>
           </div>
-          <form class="form">
-            <div class="form__item">
-              <label class="form__label" for="name">name</label>
-              <input class="form__input" id="name" type="text" required />
-            </div>
 
-            <div class="form__item">
-              <label class="form__label" for="email">email</label>
-              <input class="form__input" id="email" type="email" required />
-            </div>
+          <div class="form__item">
+            <label class="form__label" for="email">email</label>
+            <input class="form__input" id="email" type="email" required />
+          </div>
 
-            <div class="form__item">
-              <label class="form__label" for="message">message</label>
-              <textarea
-                class="form__input form__textarea"
-                id="message"
-                required
-              ></textarea>
-            </div>
+          <div class="form__item">
+            <label class="form__label" for="message">message</label>
+            <textarea
+              class="form__input form__textarea"
+              id="message"
+              required
+            ></textarea>
+          </div>
 
-            <button class="form__submit" type="submit">send</button>
-          </form>
-        </div>
+          <button class="form__submit" type="submit">send</button>
+        </form>
       </div>
     </div>
     <script type="module" src="./scripts/main.js"></script>
