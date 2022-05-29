@@ -1,3 +1,9 @@
+
+/*=======================================================================================*/
+/*                                              global                                   */
+/*=======================================================================================*/
+
+
 :root {
   /* Colour variables */
   --picton-blue: #33ccff;
@@ -151,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about__info__card {
-  flex:1;
+  flex: 1;
   padding: 10px;
 }
 
@@ -159,13 +165,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
 }
 
-.about__info__card >img {
+.about__info__card > img {
   /*
   For responsive image, the max-width property is set to 100%, the image will scale down 
   if it has to, but never scale up to be larger than its original size:
   */
   border-radius: 50%;
-  height:auto;
+  height: auto;
   max-width: 100%;
 }
 
@@ -212,12 +218,12 @@ h1, h2, h3, h4, h5, h6 {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: 0.2s ease-in-out;
-  width: clamp(10rem, 80vw, 40rem);
 }
 
 .modal--active {
   left: 50%;
   top: 50%;
+  width: clamp(10rem, 80vw, 40rem);
 }
 
 .modal__content {
@@ -242,6 +248,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   margin: 1.2rem 0;
   padding: 0.5rem 1rem;
+  min-height: 4rem;
 }
 
 .form__item--active .form__label {
@@ -279,9 +286,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   letter-spacing: 0.08rem;
   margin: 1rem auto;
-  padding: 1.3rem 4rem;
+  padding: 1.5rem 0;
+  text-align: center;
   text-transform: uppercase;
-  width: fit-content;
+  width: clamp(5rem, 100%, 15rem);
 }
 
 .form__submit:hover {
