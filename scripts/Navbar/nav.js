@@ -10,13 +10,6 @@ navIcon.addEventListener("click", toggleNavbar);
 // clicks on the header__bar__icon.
 //=======================================================================================
 function toggleNavbar() {
-
-    let x = document.getElementById("navbar");
-
-    if (x.className === "header__nav") {
-      x.className += " responsive";
-    } else {
-      x.className = "header__nav";
-    }
+  document.getElementById("navbar").classList.toggle("header__nav-responsive");
 }
 
