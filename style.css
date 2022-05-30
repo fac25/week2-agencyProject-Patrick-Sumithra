@@ -4,7 +4,7 @@
 
 :root {
   /* Colour variables */
-  --picton-blue: #33ccff;
+  --picton-blue: #3dbeff;
   --taupe-gray: #847a8d;
   --anti-flash-white: #f0f4f5;
   --dark-saturated-cyan: #25564b;
@@ -42,9 +42,9 @@ h6 {
   This will set the main page width 65% of the viewport and align 
   the content to the center.
   */
-  width: 65%;
+  /* width: 65%;
   margin: auto;
-  padding-top: 60px;
+  padding-top: 60px; */
 }
 
 .title--small {
@@ -86,7 +86,6 @@ h6 {
   display: flex;
   justify-content: space-between;
   min-height: 75px;
-  padding: 10px;
   width: 100%;
 }
 
@@ -117,33 +116,25 @@ h6 {
   display: none;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (max-width: 600px) {
-  .header__nav a {
-    display: none;
-  }
+.hero {
+  background-image: url("./images/mobile/image-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
-  .header__nav a.header__bar__icon {
-    display: block;
-    float: right;
-  }
-
-  /* The "responsive" class is added to the header__nav in JavaScript when the user clicks on the header__bar__icon. This class makes the header__nav look good on small screens (display the links vertically instead of horizontally) */
-  .header__nav.responsive {
-    position: relative;
-  }
-
-  .header__nav.responsive a.header__bar__icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .header__nav.responsive a {
-    display: block;
-    float: none;
-    text-align: left;
-  }
+.hero__text {
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  line-height: 4rem;
+  margin-top: 40%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*=======================================================================================*/
@@ -298,4 +289,42 @@ h6 {
 .form__submit:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+/* Media queries */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 600px) {
+  .header__nav a {
+    display: none;
+  }
+
+  .header__nav a.header__bar__icon {
+    display: block;
+    float: right;
+  }
+
+  /* The "responsive" class is added to the header__nav in JavaScript when the user clicks on the header__bar__icon. This class makes the header__nav look good on small screens (display the links vertically instead of horizontally) */
+  .header__nav.responsive {
+    position: relative;
+  }
+
+  .header__nav.responsive a.header__bar__icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .header__nav.responsive a {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("./images/desktop/image-header.jpg");
+    background-position: bottom;
+  }
 }
