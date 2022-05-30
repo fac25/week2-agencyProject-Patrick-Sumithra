@@ -1,8 +1,6 @@
-
 /*=======================================================================================*/
 /*                                              global                                   */
 /*=======================================================================================*/
-
 
 :root {
   /* Colour variables */
@@ -30,7 +28,12 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Fraunces", sans-serif;
 }
 
@@ -76,54 +79,53 @@ h1, h2, h3, h4, h5, h6 {
 /*                                      Header                                           */
 /*=======================================================================================*/
 
-.header{
+.header {
   align-items: center;
   background-color: var(--picton-blue);
   color: white;
   display: flex;
   justify-content: space-between;
-  min-height: 75px;  
-  padding: 10px;  
-  width: 100%; 
+  min-height: 75px;
+  padding: 10px;
+  width: 100%;
 }
 
 /* Navigation Bar*/
-.header__nav{
+.header__nav {
   margin-left: 20px;
 }
 
-.header__nav a{
-  color:  white;
+.header__link {
+  color: white;
   display: inline-block;
   font-size: 1.5rem;
   font-weight: bold;
   padding: 8px 20px;
 }
 
-.header__nav a:hover{
+.header__link:hover {
   background-color: white;
   border-radius: 15px;
   color: #4d4d4d;
   cursor: pointer;
-  opacity: .5;
-  transition: .9s;
+  opacity: 0.5;
+  transition: 0.9s;
 }
 
 /* Hide the link that should open and close the header__nav on small screens */
-.header__nav .header__bar__icon{
+.header__nav .header__bar__icon {
   display: none;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (max-width: 600px) 
-{
+@media screen and (max-width: 600px) {
   .header__nav a {
     display: none;
-  }    
+  }
 
   .header__nav a.header__bar__icon {
-      display: block;
-      float: right;      
+    display: block;
+    float: right;
   }
 
   /* The "responsive" class is added to the header__nav in JavaScript when the user clicks on the header__bar__icon. This class makes the header__nav look good on small screens (display the links vertically instead of horizontally) */
@@ -132,13 +134,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .header__nav.responsive a.header__bar__icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   .header__nav.responsive a {
-    display: block;  
+    display: block;
     float: none;
     text-align: left;
   }
@@ -238,6 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-top: 1rem;
   width: 100%;
 }
@@ -296,5 +299,3 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   opacity: 0.8;
 }
-
-
