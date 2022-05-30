@@ -7,6 +7,7 @@
   --picton-blue: #3dbeff;
   --taupe-gray: #847a8d;
   --anti-flash-white: #f0f4f5;
+  --dark-moderate-cyan: #83C8BA;
   --dark-saturated-cyan: #25564b;
   --dark-gray-blue: #5a636c;
 }
@@ -104,7 +105,7 @@ h6 {
 }
 
 /* Hide the link that should open and close the header__nav on small screens */
-.header__nav .header__bar__icon {
+.header__bar__icon {
   display: none;
   font-size: 1rem;
   margin-right: 1rem;
@@ -327,7 +328,39 @@ h6 {
   opacity: 0.8;
 }
 
-/* Media queries */
+
+/*=======================================================================================*/
+/*                                   Footer                                              */
+/*=======================================================================================*/
+
+.footer {
+  align-items: center;
+  background-color: var(--dark-moderate-cyan);
+  color: var(--dark-saturated-cyan);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
+  min-height: 200px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer__menu, .footer__social-icons {
+  display: flex;
+  gap: 2em;
+}
+
+/* To select all 'a' tags under footer class at all levels */
+.footer a{
+  color: inherit;
+  font-size: 0.938rem;
+}
+
+/*=======================================================================================*/
+/*                                   Media queries                                       */
+/*=======================================================================================*/
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (max-width: 600px) {
@@ -335,27 +368,28 @@ h6 {
     display: none;
   }
 
-  .header__nav a.header__bar__icon {
+  a.header__bar__icon {
     display: block;
     float: right;
   }
 
   /* The "responsive" class is added to the header__nav in JavaScript when the user clicks on the header__bar__icon. This class makes the header__nav look good on small screens (display the links vertically instead of horizontally) */
-  .header__nav.responsive {
+  .header__nav-responsive {
     position: relative;
   }
 
-  .header__nav.responsive a.header__bar__icon {
+  .header__nav-responsive a.header__bar__icon {
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  .header__nav.responsive a {
+  .header__nav-responsive a {
     display: block;
     float: none;
     text-align: left;
   }
+
 }
 
 @media screen and (min-width: 768px) {
