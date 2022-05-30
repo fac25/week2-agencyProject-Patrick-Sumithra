@@ -38,8 +38,7 @@ h6 {
 }
 
 .container {
-  /* 
-  This will set the main page width 65% of the viewport and align 
+  /* This will set the main page width 65% of the viewport and align 
   the content to the center.
   */
   /* width: 65%;
@@ -117,10 +116,11 @@ h6 {
 }
 
 .hero {
+  align-items: center;
   background-image: url("./images/mobile/image-header.jpg");
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -132,9 +132,47 @@ h6 {
   font-weight: 900;
   letter-spacing: 1rem;
   line-height: 4rem;
-  margin-top: 40%;
   text-align: center;
   text-transform: uppercase;
+  transform: translateY(-50%);
+  width: 80%;
+}
+
+/*=======================================================================================*/
+/*                              Content cards                                            */
+/*=======================================================================================*/
+
+.content-card {
+  margin-bottom: 4rem;
+}
+
+.content-card__image {
+  width: 100%;
+}
+
+.content-card__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-card__title,
+.content-card__text {
+  text-align: center;
+  width: 80%;
+}
+
+.content-card__title {
+  margin-top: 4rem;
+  font-size: 3rem;
+}
+
+.content-card__text {
+  margin-top: 3rem;
+  color: var(--taupe-gray);
+  line-height: 2.8rem;
+  font-size: 1.9rem;
 }
 
 /*=======================================================================================*/
@@ -324,7 +362,18 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .hero {
+    align-items: flex-start;
     background-image: url("./images/desktop/image-header.jpg");
     background-position: bottom;
+  }
+
+  .hero__text {
+    margin-top: 10rem;
+  }
+
+  .content-card {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
   }
 }
