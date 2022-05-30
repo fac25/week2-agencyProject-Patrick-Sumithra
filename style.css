@@ -155,6 +155,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: clamp(20rem, 80vw, 40rem);
 }
 
 .content-card__title,
@@ -375,5 +376,14 @@ h6 {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;
+  }
+
+  .content-card__text-wrapper {
+    min-height: auto;
+  }
+
+  .content-card:nth-child(even) .content-card__text-wrapper {
+    grid-row: 1;
   }
 }
