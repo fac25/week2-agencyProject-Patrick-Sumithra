@@ -1,6 +1,10 @@
 # Sunnyside Agency
 
-### User Stories
+This is a simple fictional agency website, built for learning purposes only.
+In its current state, it is far from being ready 🤣
+
+
+#### User Stories
 
 As a potential client, I want to:
 
@@ -8,7 +12,7 @@ As a potential client, I want to:
 - [ ] Browse your website on mobile, tablet, and desktop devices [#2][i2]
 - [x] Click to navigate to different sections of your webpage [#3][i3]
 - [ ] Contact you to enquire about working with you [#4][i4]
-- [x] Visit your website at a publicly accessible domain name [link][e1] 
+- [x] Visit your website at a publicly accessible domain name [[live website][e1]]
 
 Additionally, as a visually impaired user, I want to:
 - [ ] Navigate your website using keyboard controls [#5][i5]
