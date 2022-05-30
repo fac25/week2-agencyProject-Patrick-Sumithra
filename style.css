@@ -7,6 +7,7 @@
   --picton-blue: #3dbeff;
   --taupe-gray: #847a8d;
   --anti-flash-white: #f0f4f5;
+  --dark-moderate-cyan: #83C8BA;
   --dark-saturated-cyan: #25564b;
   --dark-gray-blue: #5a636c;
 }
@@ -327,7 +328,39 @@ h6 {
   opacity: 0.8;
 }
 
-/* Media queries */
+
+/*=======================================================================================*/
+/*                                   Footer                                              */
+/*=======================================================================================*/
+
+.footer {
+  align-items: center;
+  background-color: var(--dark-moderate-cyan);
+  color: var(--dark-saturated-cyan);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
+  min-height: 200px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer__menu, .footer__social-icons {
+  display: flex;
+  gap: 2em;
+}
+
+/* To select all 'a' tags under footer class at all levels */
+.footer a{
+  color: inherit;
+  font-size: 0.938rem;
+}
+
+/*=======================================================================================*/
+/*                                   Media queries                                       */
+/*=======================================================================================*/
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (max-width: 600px) {
