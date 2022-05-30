@@ -1,12 +1,10 @@
-
 /*=======================================================================================*/
 /*                                              global                                   */
 /*=======================================================================================*/
 
-
 :root {
   /* Colour variables */
-  --picton-blue: #33ccff;
+  --picton-blue: #3dbeff;
   --taupe-gray: #847a8d;
   --anti-flash-white: #f0f4f5;
   --dark-saturated-cyan: #25564b;
@@ -30,18 +28,22 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Fraunces", sans-serif;
 }
 
 .container {
-  /* 
-  This will set the main page width 65% of the viewport and align 
+  /* This will set the main page width 65% of the viewport and align 
   the content to the center.
   */
-  width: 65%;
+  /* width: 65%;
   margin: auto;
-  padding-top: 60px;
+  padding-top: 60px; */
 }
 
 .title--small {
@@ -76,72 +78,101 @@ h1, h2, h3, h4, h5, h6 {
 /*                                      Header                                           */
 /*=======================================================================================*/
 
-.header{
+.header {
   align-items: center;
   background-color: var(--picton-blue);
   color: white;
   display: flex;
   justify-content: space-between;
-  min-height: 75px;  
-  padding: 10px;  
-  width: 100%; 
+  min-height: 75px;
+  width: 100%;
 }
 
 /* Navigation Bar*/
-.header__nav{
+.header__nav {
   margin-left: 20px;
 }
 
-.header__nav a{
-  color:  white;
+.header__link {
+  color: white;
   display: inline-block;
   font-size: 1.5rem;
   font-weight: bold;
   padding: 8px 20px;
 }
 
-.header__nav a:hover{
+.header__link:hover {
   background-color: white;
   border-radius: 15px;
   color: #4d4d4d;
   cursor: pointer;
-  opacity: .5;
-  transition: .9s;
+  opacity: 0.5;
+  transition: 0.9s;
 }
 
 /* Hide the link that should open and close the header__nav on small screens */
-.header__nav .header__bar__icon{
+.header__nav .header__bar__icon {
   display: none;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (max-width: 600px) 
-{
-  .header__nav a {
-    display: none;
-  }    
+.hero {
+  align-items: center;
+  background-image: url("./images/mobile/image-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
-  .header__nav a.header__bar__icon {
-      display: block;
-      float: right;      
-  }
+.hero__text {
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  line-height: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+  width: 80%;
+}
 
-  /* The "responsive" class is added to the header__nav in JavaScript when the user clicks on the header__bar__icon. This class makes the header__nav look good on small screens (display the links vertically instead of horizontally) */
-  .header__nav.responsive {
-    position: relative;
-  }
+/*=======================================================================================*/
+/*                              Content cards                                            */
+/*=======================================================================================*/
 
-  .header__nav.responsive a.header__bar__icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-  }
+.content-card {
+  margin-bottom: 4rem;
+}
 
-  .header__nav.responsive a {
-    display: block;  
-    float: none;
-    text-align: left;
-  }
+.content-card__image {
+  width: 100%;
+}
+
+.content-card__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-card__title,
+.content-card__text {
+  text-align: center;
+  width: 80%;
+}
+
+.content-card__title {
+  margin-top: 4rem;
+  font-size: 3rem;
+}
+
+.content-card__text {
+  margin-top: 3rem;
+  color: var(--taupe-gray);
+  line-height: 2.8rem;
+  font-size: 1.9rem;
 }
 
 /*=======================================================================================*/
@@ -238,6 +269,7 @@ h1, h2, h3, h4, h5, h6 {
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-top: 1rem;
   width: 100%;
 }
@@ -297,4 +329,51 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.8;
 }
 
+/* Media queries */
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 600px) {
+  .header__nav a {
+    display: none;
+  }
+
+  .header__nav a.header__bar__icon {
+    display: block;
+    float: right;
+  }
+
+  /* The "responsive" class is added to the header__nav in JavaScript when the user clicks on the header__bar__icon. This class makes the header__nav look good on small screens (display the links vertically instead of horizontally) */
+  .header__nav.responsive {
+    position: relative;
+  }
+
+  .header__nav.responsive a.header__bar__icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .header__nav.responsive a {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    align-items: flex-start;
+    background-image: url("./images/desktop/image-header.jpg");
+    background-position: bottom;
+  }
+
+  .hero__text {
+    margin-top: 10rem;
+  }
+
+  .content-card {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+}

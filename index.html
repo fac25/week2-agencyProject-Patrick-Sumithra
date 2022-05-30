@@ -12,14 +12,16 @@
     <link rel="stylesheet" href="./style.css" />
 
     <!-- Link to Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-        
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
 
     <!-- Google Font Import - Burlow -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
       rel="stylesheet"
     />
     <title>Home</title>
@@ -30,30 +32,69 @@
       <header class="header">
         <h1 class="title--large">sunnyside</h1>
         <!--Nav Menu-->
-        <nav class="header__nav"  id="navbar">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-            <a href="javascript:void(0);" class="header__bar__icon">
-              <i class="fa fa-bars"></i>
-            </a>
+        <nav class="header__nav" id="navbar">
+          <a class="header__link" href="#">About</a>
+          <a class="header__link" href="#">Services</a>
+          <a class="header__link" href="#">Projects</a>
+          <a href="#"><button class="button">contact</button></a>
+          <a href="javascript:void(0);" class="header__bar__icon">
+            <i class="fa fa-bars"></i>
+          </a>
         </nav>
       </header>
+      <div class="hero">
+        <h2 class="hero__text">we are creatives</h2>
+      </div>
+      <section class="content-card">
+        <picture class="'content-card__picture">
+          <source
+            media="(max-width: 767px)"
+            srcset="./images/mobile/image-transform.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/desktop/image-transform.jpg"
+          />
+          <img
+            class="content-card__image"
+            src="./images/mobile/image-transform.jpg"
+            alt="an egg portraiying the idea of transformation"
+          />
+        </picture>
+        <div class="content-card__text-wrapper">
+          <h2 class="content-card__title">Transform your brand</h2>
+          <p class="content-card__text">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+        </div>
+      </section>
+
       <section class="about">
         <h2 class="title--medium">About us</h2>
         <div class="about__info__wrapper">
           <div class="about__info__card">
-            <img src="./images//patrick.jpg" alt="Patrick photo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nemo doloribus, fugiat perferendis vero soluta at aspernatur, natus ea labore nesciunt eum quaerat officiis harum similique! Tempore ipsum temporibus dolorem!</p>
+            <img src="./images//patrick.jpg" alt="Patrick photo" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              nemo doloribus, fugiat perferendis vero soluta at aspernatur,
+              natus ea labore nesciunt eum quaerat officiis harum similique!
+              Tempore ipsum temporibus dolorem!
+            </p>
             <div class="title__wrapper">
               <h2 class="title--small">Patrick</h2>
               <p class="subtitle--small">xxxxxxxxxxxxxxxx</p>
             </div>
           </div>
           <div class="about__info__card">
-            <img src="./images/sumithra.jpg" alt="Sumithra photo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nemo doloribus, fugiat perferendis vero soluta at aspernatur, natus ea labore nesciunt eum quaerat officiis harum similique! Tempore ipsum temporibus dolorem!</p>
+            <img src="./images/sumithra.jpg" alt="Sumithra photo" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              nemo doloribus, fugiat perferendis vero soluta at aspernatur,
+              natus ea labore nesciunt eum quaerat officiis harum similique!
+              Tempore ipsum temporibus dolorem!
+            </p>
             <div class="title__wrapper">
               <h2 class="title--small">Sumithra</h2>
               <p class="subtitle--small">xxxxxxxxxxxxx</p>
@@ -61,7 +102,6 @@
           </div>
         </div>
       </section>
-      <button class="button">contact</button>
       <div class="modal">
         <div class="modal__content">
           <div class="title__wrapper">
@@ -72,22 +112,28 @@
             </p>
           </div>
 
-          <div class="form__item">
-            <label class="form__label" for="email">email</label>
-            <input class="form__input" id="email" type="email" required />
-          </div>
+          <form class="form">
+            <div class="form__item">
+              <label class="form__label" for="name">name</label>
+              <input class="form__input" id="name" type="text" required />
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="email">email</label>
+              <input class="form__input" id="email" type="email" required />
+            </div>
 
-          <div class="form__item">
-            <label class="form__label" for="message">message</label>
-            <textarea
-              class="form__input form__textarea"
-              id="message"
-              required
-            ></textarea>
-          </div>
+            <div class="form__item">
+              <label class="form__label" for="message">message</label>
+              <textarea
+                class="form__input form__textarea"
+                id="message"
+                required
+              ></textarea>
+            </div>
 
-          <button class="form__submit" type="submit">send</button>
-        </form>
+            <button class="form__submit" type="submit">send</button>
+          </form>
+        </div>
       </div>
     </div>
     <script type="module" src="./scripts/main.js"></script>
