@@ -9,6 +9,7 @@ function displayForm() {
 }
 
 function hideForm({ target }) {
+  // Guard clause added to prevent the class from being removed when the modal or button is clicked
   if (modal.contains(target) || target === contactBtn) return;
   modal.classList.remove("modal--active");
 }
