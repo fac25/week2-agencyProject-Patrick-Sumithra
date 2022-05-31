@@ -195,9 +195,6 @@ h6 {
 }
 
 .about__info__card {
-  flex-basis: 500px;
-	flex-grow: 0;
-	flex-shrink: 1;
   padding: 10px;
   max-width: 25rem;
 }
