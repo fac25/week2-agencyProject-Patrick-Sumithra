@@ -12,6 +12,10 @@
   --dark-gray-blue: #5a636c;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Barlow", sans-serif;
   font-size: 0.625rem;
@@ -198,6 +202,10 @@ h6 {
   max-width: 25rem;
 }
 
+.about__info__card strong {
+  font-weight: 900;
+}
+
 .about__info__card > * {
   margin-bottom: 1.25rem;
   font-size: 1rem;
@@ -260,6 +268,7 @@ h6 {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: 0.2s ease-in-out;
+  z-index: 3;
 }
 
 .modal--active {
