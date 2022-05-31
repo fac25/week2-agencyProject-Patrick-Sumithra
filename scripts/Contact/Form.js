@@ -1,25 +1,18 @@
 const formItemNodeList = document.querySelectorAll(".form__item");
 
-formItemNodeList.forEach((item) => {
-  item.addEventListener("click", handleFormItemClick);
-  item.addEventListener("invalid", emulateClick);
-});
+formItemNodeList.forEach((item) =>
+  item.addEventListener("focusin", handleItemFocus)
+);
 
-function handleFormItemClick({ currentTarget }) {
-  const currentInput = currentTarget.querySelector(".form__input");
-  clearInputStyling();
+function handleItemFocus({ currentTarget }) {
+  removeNodeListActiveStyling();
   currentTarget.classList.add("form__item--active");
-  currentInput.focus();
 }
 
-function clearInputStyling() {
+function removeNodeListActiveStyling() {
   formItemNodeList.forEach((item) => {
     const currentInput = item.querySelector(".form__input");
     if (currentInput.value.length > 0) return;
     item.classList.remove("form__item--active");
   });
-}
-
-function emulateClick({ currentTarget }) {
-  currentTarget.click();
 }
