@@ -21,6 +21,5 @@ function clearInputStyling() {
 }
 
 function emulateClick({ currentTarget }) {
-  console.log("focused");
   currentTarget.click();
 }
