@@ -7,7 +7,7 @@
   --picton-blue: #3dbeff;
   --taupe-gray: #847a8d;
   --anti-flash-white: #f0f4f5;
-  --dark-moderate-cyan: #83C8BA;
+  --dark-moderate-cyan: #83c8ba;
   --dark-saturated-cyan: #25564b;
   --dark-gray-blue: #5a636c;
 }
@@ -226,6 +226,10 @@ h6 {
   width: fit-content;
 }
 
+.button:focus {
+  outline: 2px solid black;
+}
+
 .button:hover {
   cursor: pointer;
   transform: scale(1.05);
@@ -269,7 +273,15 @@ h6 {
   flex-direction: column;
   justify-content: center;
   margin-top: 0.625rem;
-  width: 100%;
+}
+
+/* This toggle in visibility of the form items allows a keyboard user to tab through the page without going through the hidden form */
+.form * {
+  visibility: hidden;
+}
+
+.modal--active .form * {
+  visibility: visible;
 }
 
 .form__item {
@@ -328,7 +340,6 @@ h6 {
   opacity: 0.8;
 }
 
-
 /*=======================================================================================*/
 /*                                   Footer                                              */
 /*=======================================================================================*/
@@ -347,13 +358,14 @@ h6 {
   width: 100%;
 }
 
-.footer__menu, .footer__social-icons {
+.footer__menu,
+.footer__social-icons {
   display: flex;
   gap: 2em;
 }
 
 /* To select all 'a' tags under footer class at all levels */
-.footer a{
+.footer a {
   color: inherit;
   font-size: 0.938rem;
 }
@@ -364,7 +376,7 @@ h6 {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (max-width: 600px) {
-  .header__nav a {
+  .header__nav * {
     display: none;
   }
 
@@ -384,12 +396,11 @@ h6 {
     top: 0;
   }
 
-  .header__nav-responsive a {
+  .header__nav-responsive * {
     display: block;
     float: none;
     text-align: left;
   }
-
 }
 
 @media screen and (min-width: 768px) {

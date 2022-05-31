@@ -13,3 +13,9 @@ function hideForm({ target }) {
   if (modal.contains(target) || target === contactBtn) return;
   modal.classList.remove("modal--active");
 }
+
+// Keyboard navigation
+document.addEventListener("keyup", handleKeypress);
+function handleKeypress({ key }) {
+  if (key === "Escape") modal.classList.remove("modal--active");
+}
