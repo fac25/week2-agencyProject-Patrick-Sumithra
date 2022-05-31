@@ -180,6 +180,8 @@ h6 {
 /*=======================================================================================*/
 
 .about {
+  margin-bottom: 2em;
+  margin-top: 5em;
   text-align: center;
 }
 .about__info__wrapper {
@@ -189,7 +191,9 @@ h6 {
 }
 
 .about__info__card {
-  flex: 1;
+  flex-basis: 500px;
+	flex-grow: 0;
+	flex-shrink: 1;
   padding: 10px;
   max-width: 25rem;
 }
