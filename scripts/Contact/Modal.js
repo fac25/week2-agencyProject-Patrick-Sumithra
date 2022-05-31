@@ -1,20 +1,15 @@
-const body = document.querySelector("body");
 const contactBtn = document.querySelector("button");
 const modal = document.querySelector(".modal");
 
-body.addEventListener("click", hideForm);
-modal.addEventListener("click", modalStopPropagation);
+document.addEventListener("click", hideForm);
 contactBtn.addEventListener("click", displayForm);
 
-function displayForm(event) {
-  event.stopPropagation();
+function displayForm() {
   modal.classList.toggle("modal--active");
 }
 
-function modalStopPropagation(event) {
-  event.stopPropagation();
-}
-
-function hideForm() {
+function hideForm({ target }) {
+  // Guard clause added to prevent the class from being removed when the modal or button is clicked
+  if (modal.contains(target) || target === contactBtn) return;
   modal.classList.remove("modal--active");
 }
