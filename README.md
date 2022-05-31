@@ -1,5 +1,7 @@
 # Sunnyside Agency
 
+Website design inspiration taken from [Frontend Mentor][e1]
+
 This is a simple fictional agency website, built for learning purposes only.
 In its current state, it is far from being ready 🤣
 
@@ -9,20 +11,21 @@ In its current state, it is far from being ready 🤣
 As a potential client, I want to:
 
 - [x] See information about each member of your team so that I can know who you are [#1][i1]
-- [ ] Browse your website on mobile, tablet, and desktop devices [#2][i2]
-- [x] Click to navigate to different sections of your webpage [#3][i3]
+- [x] Browse your website on mobile, tablet, and desktop devices [#2][i2]
+- [ ] Click to navigate to different sections of your webpage [#3][i3]
 - [ ] Contact you to enquire about working with you [#4][i4]
-- [x] Visit your website at a publicly accessible domain name [[live website][e1]]
+- [x] Visit your website at a publicly accessible domain name [[live website][e2]]
 
 Additionally, as a visually impaired user, I want to:
-- [ ] Navigate your website using keyboard controls [#5][i5]
+- [x] Navigate your website using keyboard controls [#5][i5]
 - [ ] Hear my screen reader describe the content on your website [#6][i6]
     
 
 
 
 <!-- External links -->
-[e1]: https://fac25.github.io/week2-agencyProject-Patrick-Sumithra/
+[e1]: https://www.frontendmentor.io
+[e2]: https://fac25.github.io/week2-agencyProject-Patrick-Sumithra/
 
 
 <!-- Issue links -->
