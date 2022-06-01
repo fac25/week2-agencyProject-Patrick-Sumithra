@@ -10,6 +10,8 @@
   --dark-moderate-cyan: #83c8ba;
   --dark-saturated-cyan: #25564b;
   --dark-gray-blue: #5a636c;
+  --police-blue: #3f454c;
+  --old-lavender: #7b7283;
 }
 
 html {
@@ -33,15 +35,14 @@ h5,
 h6 {
   font-family: "Fraunces", sans-serif;
 }
-
-.container {
-  /* This will set the main page width 65% of the viewport and align 
+/* .container {
+  This will set the main page width 65% of the viewport and align 
   the content to the center.
-  */
-  /* width: 65%;
+  
+  width: 65%;
   margin: auto;
-  padding-top: 60px; */
-}
+  padding-top: 60px;
+} */
 
 .title--small {
   font-size: 1rem;
@@ -62,7 +63,7 @@ h6 {
 }
 
 .subtitle--small {
-  color: var(--taupe-gray);
+  color: var(--old-lavender);
   font-size: 1rem;
 }
 
@@ -82,9 +83,13 @@ h6 {
   color: white;
   display: flex;
   justify-content: space-between;
-  min-height: 75px;
-  width: 100%;
+  min-height: 4rem;
   user-select: none;
+  width: 100%;
+}
+
+.header__title {
+  color: var(--police-blue);
 }
 
 /* Navigation Bar*/
@@ -93,7 +98,7 @@ h6 {
 }
 
 .header__link {
-  color: white;
+  color: var(--police-blue);
   display: inline-block;
   font-size: 0.938rem;
   font-weight: bold;
@@ -128,7 +133,7 @@ h6 {
 }
 
 .hero__text {
-  color: white;
+  color: var(--police-blue);
   font-size: 1.875rem;
   font-weight: 900;
   letter-spacing: 0.625rem;
@@ -151,6 +156,7 @@ h6 {
 
 .content-card__image {
   width: 100%;
+  height: 100%;
 }
 
 .content-card__text-wrapper {
@@ -174,7 +180,7 @@ h6 {
 
 .content-card__text {
   margin-top: 1.875rem;
-  color: var(--taupe-gray);
+  color: var(--old-lavender);
   line-height: 1.75rem;
   font-size: 1.3rem;
 }
@@ -383,6 +389,7 @@ h6 {
 .footer a {
   color: inherit;
   font-size: 0.938rem;
+  color: var(--police-blue);
 }
 
 /*=======================================================================================*/
@@ -403,17 +410,17 @@ h6 {
   /* The "responsive" class is added to the header__nav in JavaScript when the user clicks on the header__bar__icon. This class makes the header__nav look good on small screens (display the links vertically instead of horizontally) */
   .header__nav-responsive {
     position: absolute;
-    top: 5rem;
+    top: 4rem;
     right: 0;
     margin: 0 1rem;
   }
 
-  a.header__bar__icon {
+  .header__bar__icon {
     position: absolute;
     right: 0;
   }
 
-  .header__nav-responsive * {
+  .header__nav-responsive > * {
     display: block;
     float: none;
     text-align: center;
