@@ -33,15 +33,50 @@
         <h1 class="title--large">sunnyside</h1>
         <!--Nav Menu-->
         <nav class="header__nav" id="navbar">
-          <a class="header__link" href="#">About</a>
-          <a class="header__link" href="#">Services</a>
-          <a class="header__link" href="#">Projects</a>
+          <a class="header__link" href="#about">About</a>
+          <a class="header__link" href="https://github.com/SunnysideAgency"
+            >Projects</a
+          >
           <button class="button">contact</button>
           <a href="#" aria-label="Menu" class="header__bar__icon">
             <i class="fa fa-bars"></i>
           </a>
         </nav>
       </header>
+
+      <div class="modal">
+        <div class="modal__content">
+          <div class="title__wrapper">
+            <h2 class="title--medium">Contact Us</h2>
+            <p class="subtitle--small">
+              Feel free to contact us if you need any assistance or have any
+              questions.
+            </p>
+          </div>
+
+          <form class="form">
+            <div class="form__item">
+              <label class="form__label" for="name">name</label>
+              <input class="form__input" id="name" type="text" required />
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="email">email</label>
+              <input class="form__input" id="email" type="email" required />
+            </div>
+
+            <div class="form__item">
+              <label class="form__label" for="message">message</label>
+              <textarea
+                class="form__input form__textarea"
+                id="message"
+                required
+              ></textarea>
+            </div>
+
+            <button class="form__submit" type="submit">send</button>
+          </form>
+        </div>
+      </div>
       <div class="hero">
         <h2 class="hero__text">we are creatives</h2>
       </div>
@@ -98,91 +133,58 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <h2 class="title--medium">About us</h2>
         <div class="about__info__wrapper">
           <div class="about__info__card">
             <img src="./images//patrick.jpg" alt="Patrick photo" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              nemo doloribus, fugiat perferendis vero soluta at aspernatur,
-              natus ea labore nesciunt eum quaerat officiis harum similique!
-              Tempore ipsum temporibus dolorem!
+              I'm Patrick (he/him), a software developer with a background in
+              the hospitality industry. <br />
+              <strong>I like code, thank you, bye.</strong>
             </p>
             <div class="title__wrapper">
               <h2 class="title--small">Patrick</h2>
-              <p class="subtitle--small">xxxxxxxxxxxxxxxx</p>
+              <a
+                class="subtitle--small"
+                href="https://dogwishx.github.io/FAC/application-website/"
+                >Learn More</a
+              >
             </div>
           </div>
           <div class="about__info__card">
             <img src="./images/sumithra.jpg" alt="Sumithra photo" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              nemo doloribus, fugiat perferendis vero soluta at aspernatur,
-              natus ea labore nesciunt eum quaerat officiis harum similique!
-              Tempore ipsum temporibus dolorem!
+              My professional experience is mainly on C/C++. Recently I have
+              started learning about HTML, CSS, JavaScript and React. I am
+              fascinated by the web technologies and would like to explore more
+              in that direction.
             </p>
             <div class="title__wrapper">
               <h2 class="title--small">Sumithra</h2>
-              <p class="subtitle--small">xxxxxxxxxxxxx</p>
+              <a
+                class="subtitle--small"
+                href="https://sumithra-suresh.github.io/ApplicationFAC/index.html"
+                >Learn More</a
+              >
             </div>
           </div>
         </div>
       </section>
-      <div class="modal">
-        <div class="modal__content">
-          <div class="title__wrapper">
-            <h2 class="title--medium">Contact Us</h2>
-            <p class="subtitle--small">
-              Feel free to contact us if you need any assistance or have any
-              questions.
-            </p>
-          </div>
-
-          <form class="form">
-            <div class="form__item">
-              <label class="form__label" for="name">name</label>
-              <input class="form__input" id="name" type="text" required />
-            </div>
-            <div class="form__item">
-              <label class="form__label" for="email">email</label>
-              <input class="form__input" id="email" type="email" required />
-            </div>
-
-            <div class="form__item">
-              <label class="form__label" for="message">message</label>
-              <textarea
-                class="form__input form__textarea"
-                id="message"
-                required
-              ></textarea>
-            </div>
-
-            <button class="form__submit" type="submit">send</button>
-          </form>
-        </div>
-      </div>
     </div>
 
     <footer class="footer">
       <h2 class="title--medium">sunnyside</h2>
       <div class="footer__menu">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/SunnysideAgency">Projects</a>
       </div>
       <div class="footer__social-icons">
-        <a href="#" aria-label="facebook"
-          ><i class="fa-brands fa-facebook-square"></i
+        <a href="https://github.com/SunnysideAgency" aria-label="github"
+          ><i class="fa-brands fa-github"></i
         ></a>
-        <a href="#" aria-label="instagram"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a href="#" aria-label="twitter"
+        <a href="https://twitter.com/SunnySide24_" aria-label="twitter"
           ><i class="fa-brands fa-twitter"></i
-        ></a>
-        <a href="#" aria-label="pinterest"
-          ><i class="fa-brands fa-pinterest"></i
         ></a>
       </div>
     </footer>
