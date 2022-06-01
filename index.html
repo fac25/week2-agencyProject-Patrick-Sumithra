@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Sunnyside agency">
+    <meta name="description" content="Sunnyside agency" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -31,17 +31,17 @@
     <div class="container">
       <!-- Header -->
       <header class="header">
-        <h1 class="title--large">sunnyside</h1>
+        <h1 class="header__title title--large">sunnyside</h1>
         <!--Nav Menu-->
+        <a href="#" class="header__bar__icon" aria-label="Menu">
+          <i class="fa fa-bars"></i>
+        </a>
         <nav class="header__nav" id="navbar">
           <a class="header__link" href="#about">About</a>
           <a class="header__link" href="https://github.com/SunnysideAgency"
             >Projects</a
           >
           <button class="button">contact</button>
-          <a href="#" aria-label="Menu" class="header__bar__icon">
-            <i class="fa fa-bars"></i>
-          </a>
         </nav>
       </header>
 
@@ -95,6 +95,8 @@
           <img
             class="content-card__image"
             src="./images/mobile/image-transform.jpg"
+            width="100%"
+            height="100%"
             alt="an egg portraiying the idea of transformation"
           />
         </picture>
@@ -121,6 +123,8 @@
           <img
             class="content-card__image"
             src="./images/mobile/image-stand-out.jpg"
+            width="100%"
+            height="100%"
             alt="an egg portraiying the idea of transformation"
           />
         </picture>
@@ -135,44 +139,54 @@
       </section>
     </div>
 
-      <section class="about" id="about">
-        <h2 class="title--medium">About us</h2>
-        <div class="about__info__wrapper">
-          <div class="about__info__card">
-            <img src="./images//patrick.jpg" alt="Patrick photo" />
-            <p>
-              I'm Patrick (he/him), a software developer with a background in
-              the hospitality industry. <br />
-              <strong>I like code, thank you, bye.</strong>
-            </p>
-            <div class="title__wrapper">
-              <h2 class="title--small">Patrick</h2>
-              <a
-                class="subtitle--small"
-                href="https://dogwishx.github.io/FAC/application-website/"
-                >Learn More</a
-              >
-            </div>
-          </div>
-          <div class="about__info__card">
-            <img src="./images/sumithra.jpg" alt="Sumithra photo" />
-            <p>
-              My professional experience is mainly on C/C++. Recently I have
-              started learning about HTML, CSS, JavaScript and React. I am
-              fascinated by the web technologies and would like to explore more
-              in that direction.
-            </p>
-            <div class="title__wrapper">
-              <h2 class="title--small">Sumithra</h2>
-              <a
-                class="subtitle--small"
-                href="https://sumithra-suresh.github.io/ApplicationFAC/index.html"
-                >Learn More</a
-              >
-            </div>
+    <section class="about" id="about">
+      <h2 class="title--medium">About us</h2>
+      <div class="about__info__wrapper">
+        <div class="about__info__card">
+          <img
+            src="./images//patrick.jpg"
+            width="100px"
+            height="100px"
+            alt="Patrick photo"
+          />
+          <p>
+            I'm Patrick (he/him), a software developer with a background in the
+            hospitality industry. <br />
+            <strong>I like code, thank you, bye.</strong>
+          </p>
+          <div class="title__wrapper">
+            <h2 class="title--small">Patrick</h2>
+            <a
+              class="subtitle--small"
+              href="https://dogwishx.github.io/FAC/application-website/"
+              >Learn More</a
+            >
           </div>
         </div>
-      </section>
+        <div class="about__info__card">
+          <img
+            src="./images/sumithra.jpg"
+            width="100px"
+            height="100px"
+            alt="Sumithra photo"
+          />
+          <p>
+            My professional experience is mainly on C/C++. Recently I have
+            started learning about HTML, CSS, JavaScript and React. I am
+            fascinated by the web technologies and would like to explore more in
+            that direction.
+          </p>
+          <div class="title__wrapper">
+            <h2 class="title--small">Sumithra</h2>
+            <a
+              class="subtitle--small"
+              href="https://sumithra-suresh.github.io/ApplicationFAC/index.html"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <h2 class="title--medium">sunnyside</h2>
